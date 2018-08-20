@@ -53,6 +53,14 @@ public class SimpleWord2vec {
                     System.out.print("単語間類似度："+ "寿司<=>" + str + " ");
                     System.out.println(word2vec.word2Vec.similarity("寿司",str));
                 });
+
+        // =>
+        // 単語間類似度：寿司<=>たれ 0.3255399465560913
+        // 単語間類似度：寿司<=>強い 0.29705730080604553
+        // 単語間類似度：寿司<=>けど 0.27321821451187134
+        // 単語間類似度：寿司<=>豪勢 0.2667180001735687
+        // 単語間類似度：寿司<=>外出 0.26569023728370667
+
         // この例ではデータ数が足りていないので、あまり良い結果が得られていません。
         // 詳しいWord2Vecのチューニングは、下のページを見てください。
         // https://deeplearning4j.org/docs/latest/deeplearning4j-nlp-word2vec
